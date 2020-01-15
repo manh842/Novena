@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Novena</title>
     <link rel="stylesheet" href="./styles.css">
@@ -43,11 +43,12 @@
         </div>
         <div id="head">
             <div class="container">
-                <div id="logo">
+                <div class="row">
+                <div id="logo" class="col-4 col-lg-4 col-md-4">
                     <img src="http://demo.themefisher.com/novena/images/logo.png" alt="Novena" width="200px"
                         height="80px">
                 </div>
-                <div id="main-menu">
+                <div id="main-menu" class="col-12 col-lg-8 col-md-12">
                     <ul class="mb-0 mt-16px">
                         <li class="item-menu"><a href="#">Home</a></li>
                         <li class="item-menu"><a href="#">Abouts</a></li>
@@ -78,28 +79,30 @@
                     </ul>
                 </div>
             </div>
+            </div>
         </div>
     </header>
     <div id="content">
         <div id="appoinment">
             <div class="container">
-                <div id="make-appoinment">
-                    <div style="width: 50px;height: 5px;background-color: red;">
+                <div id="make-appoinment" class="row">
+                    <div class="col-12 col-lg-7 col-md-10">
+                    <div style="width: 50px;height: 5px;background-color: red;margin-bottom: 30px;">
                     </div>
-                    <p style="padding: 15px 0px 40px 0px;">TOTAL HEALTH CARE SOLUTION</p>
-                    <h1 style="font-weight: 1000;line-height: 50px;color: #223a66;">Your Most Trusted Health Partner
-                    </h1>
+                    <p>TOTAL HEALTH CARE SOLUTION</p>
+                    <h1">Your Most Trusted Health Partner</h1>
                     <p style="color: #666;">A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam
                         aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
                     <div style="padding-top: 50px;"><a href="#font-appoinment">MAKE APPOINMENT | <i
                                 class="fa fa-angle-right"></i></a>
+                    </div>
                     </div>
                 </div>
             </div>
             <div id="create-appoinment">
                 <div class="container">
                     <div id="box-appoinment" class="row">
-                        <div class="row-appoinment col-4 col-lg-4 col-sm-12">
+                        <div class="row-appoinment col-10 col-lg-3 col-sm-12 col-md-11">
                             <div class="box-row">
                                 <div class="icon-box"><i class="fa fa-user-nurse"></i></div>
                                 <p>24 Hours Service</p>
@@ -110,7 +113,7 @@
                                 <a href="#">MAKE A APPOINMENT</a>
                             </div>
                         </div>
-                        <div class="row-appoinment col-4 col-lg-4 col-sm-12">
+                        <div class="row-appoinment col-10 col-lg-3 col-sm-12 col-md-11">
                             <div class="box-row">
                                 <div class="icon-box"><i class="fa fa-clock"></i></div>
                                 <p>Timing schedule</p>
@@ -126,7 +129,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row-appoinment col-4 col-lg-4 col-sm-12">
+                        <div class="row-appoinment col-10 col-lg-3 col-sm-12 col-md-11">
                             <div class="box-row">
                                 <div class="icon-box"><i class="fa fa-phone-square"></i></div>
                                 <p>Emegency Cases</p>
@@ -141,18 +144,17 @@
             </div>
         </div>
         <div class="container" style="padding-bottom: 150px;">
-            <div id="service">
-                <div class="box-service">
-                    <img src="http://demo.themefisher.com/novena/images/about/img-1.jpg" alt="a" width="330px">
+            <div id="service" class="row" >
+                <div class="box-service col-6 col-lg-4 col-md-6">
+                    <img src="http://demo.themefisher.com/novena/images/about/img-1.jpg" alt="a" class="img-fluid">
                     <div>
-                        <img src="http://demo.themefisher.com/novena/images/about/img-2.jpg" alt="b" width="330px">
+                        <img src="http://demo.themefisher.com/novena/images/about/img-2.jpg" alt="b" class="img-fluid">
                     </div>
                 </div>
-                <div class="box-service">
-                    <img src="http://demo.themefisher.com/novena/images/about/img-3.jpg" alt="c" width="330px"
-                        style="margin-top:50px ;">
+                <div class="box-service col-6 col-lg-4 col-md-6">
+                    <img src="http://demo.themefisher.com/novena/images/about/img-3.jpg" alt="c" class="img-fluid">
                 </div>
-                <div class="box-service" id="register-service">
+                <div class="box-service col-11 col-lg-4 col-md-10" id="register-service">
                     <h1 style="font-weight: 750;color: #223a66;">Personal care
                         & healthy living</h1>
                     <p style="color: #666;">We provide best leading medicle service Nulla perferendis veniam deleniti
@@ -161,23 +163,23 @@
                     <a href="#">Service <i class="fa fa-angle-right" class="pl-30"></i></a>
                 </div>
             </div>
-            <div id="result">
-                <div class="box-result">
+            <div id="result" class="row">
+                <div class="box-result col-lg-3 col-10 col-md-6">
                     <i class="fa fa-user-md"></i>
                     <h2>58</h2>
                     <p>Happy People</p>
                 </div>
-                <div class="box-result">
+                <div class="box-result col-lg-3 col-10 col-md-6">
                     <i class="fa fa-flag"></i>
                     <h2>700</h2>
                     <p>Surgery Comepleted</p>
                 </div>
-                <div class="box-result">
+                <div class="box-result col-lg-3 col-10 col-md-6">
                     <i class="fa fa-certificate"></i>
                     <h2>40</h2>
                     <p>Expert Doctors</p>
                 </div>
-                <div class="box-result">
+                <div class="box-result col-lg-3 col-10 col-md-6">
                     <i class="fa fa-globe"></i>
                     <h2>20</h2>
                     <p>Worldwide Branch</p>
@@ -186,7 +188,7 @@
         </div>
         <div id="patient">
             <div class="container">
-                <div style="text-align: center;padding:120px 130px;    text-align: center;">
+                <div style="text-align: center;padding:120px 0px;text-align: center;">
                     <h1 style="font-weight: 700;">Award winning patient care</h1>
                     <div style="width: 50px; height: 5px; background-color: red;margin:40px 0px 40px 50%;"></div>
                     <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
@@ -206,7 +208,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body ">
                             <h5><i class="fa fa-heartbeat"></i><b>Heart Disease</b></h5>
                             <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
                         </div>
@@ -234,66 +236,76 @@
             </div>
         </div>
         <div class="container" id="book-appoinment">
-            <div class="column">
-                <img src="http://demo.themefisher.com/novena/images/about/img-3.jpg" alt="d" width="50%" height="auto">
+            <div class="row">
+            <div class="column col-lg-6">
+                <img src="http://demo.themefisher.com/novena/images/about/img-3.jpg" alt="d" class="img-fluid">
                 <div id="contact-number"><h1><i class="fas fa-phone"></i>+23 345 67980</h1></div>
             </div>
-            <div id="font-appoinment" class="column">
-                <h1>BOOk APPOINMENT</h1>
-                <p>Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum
-                    atque similique praesentium soluta.</p>
-                <table>
-                    <tr>
-                        <td>
-                            <div>
-                                <select>
-                                    <option>Choose Department</option>
-                                    <option>Software Design</option>
-                                    <option>Development cycle</option>
-                                    <option>Software Development</option>
-                                    <option>Maintenance</option>
-                                    <option>Process Query</option>
-                                    <option>Cost and Duration</option>
-                                    <option>Modal Delivery</option>
-                                </select></div>
-                        </td>
-                        <td>
-                            <div><select>
-                                    <option>Select Doctors</option>
-                                    <option>Software Design</option>
-                                    <option>Development cycle</option>
-                                    <option>Software Development</option>
-                                    <option>Maintenance</option>
-                                    <option>Process Query</option>
-                                    <option>Cost and Duration</option>
-                                    <option>Modal Delivery</option>
+            <div id="font-appoinment" class="column col-lg-6">
+					<h2><b>Book appoinment</b></h2>
+					<p>Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+					     <form class="appoinment-form" method="post" action="#">
+                    <div class="row">
+                         <div class="col-lg-6">
+                            <div class="form-group">
+                                <select class="form-control" 1">
+                                  <option>Choose Department</option>
+                                  <option>Software Design</option>
+                                  <option>Development cycle</option>
+                                  <option>Software Development</option>
+                                  <option>Maintenance</option>
+                                  <option>Process Query</option>
+                                  <option>Cost and Duration</option>
+                                  <option>Modal Delivery</option>
                                 </select>
-                        </td>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <select class="form-control">
+                                  <option>Select Doctors</option>
+                                  <option>Software Design</option>
+                                  <option>Development cycle</option>
+                                  <option>Software Development</option>
+                                  <option>Maintenance</option>
+                                  <option>Process Query</option>
+                                  <option>Cost and Duration</option>
+                                  <option>Modal Delivery</option>
+                                </select>
+                            </div>
+                        </div>
+
+                         <div class="col-lg-6">
+                            <div class="form-group">
+                                <input name="date" id="date" type="date" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input name="time" id="time" type="text" class="form-control" placeholder="Time">
+                            </div>
+                        </div>
+                         <div class="col-lg-6">
+                            <div class="form-group">
+                                <input name="name" id="name" type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input name="phone" id="phone" type="Number" class="form-control" placeholder="Phone Number">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="Your-massage"><textarea name="message" id="message" class="form-control col-lg-12"
+                                placeholder="Your Message"></textarea></div>
+                        <div id="botton-appoinment"><a href="#">MAKE APPOINMENT</a></div>
+                </div>
+                </form>
             </div>
-            </tr>
-            <tr>
-                <td>
-                    <div><input type="date"></div>
-                </td>
-                <td>
-                    <div><input type="text" placeholder="time"></div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div><input type="text" placeholder="Full name"></div>
-                </td>
-                <td>
-                    <div><input type="text" placeholder="Phone number"></div>
-                </td>
-            </tr>
-            </table>
-            <div>
-                <div id="Your-massage"><textarea name="message" id="message" class="form-control" rows="6"
-                        placeholder="Your Message"></textarea></div>
-                <div id="botton-appoinment"><a href="#">MAKE APPOINMENT</a></div>
-            </div>
-            
+
         </div>
     </div>
     <footer><div class="container">
@@ -352,3 +364,4 @@
     </footer>
 </body>
 </html> 
+

@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding:0;
     font-family: "Roboto", sans-serif;
+    line-height: 1.6;
 }
 .header-top-bar{
     background-color: #223a66;
@@ -44,6 +45,7 @@
   }
   @media only screen and (min-width: 600px) {
     /* For tablets: */
+    /*
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}
@@ -56,15 +58,8 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
-  } */
-/* #head{
-    height: 80px;
-}
+  }*/
 
-#logo{
-    float: left;
-
-}
 #main-menu{
     float: right;
     padding: 0;
@@ -100,17 +95,21 @@
 .item-menu:hover .sub-menu{
     display: block;
 }
-#appoinment{
-    background-image: url(./slider-bg-1.jpg);
-    width:100%;
-    background-size: cover;
-    max-height: 700px;
- 
+@media only screen and (min-width: 953px){
+    #appoinment{
+        background-image: url(./slider-bg-1.jpg);
+        width:100%;
+        background-size: cover;
+    }
 }
+@media only screen and (max-width: 953px){
+    #appoinment{
+        background-color: #fff;
+    }
+}
+
 #make-appoinment{
-    min-height: 550px;
-    width: 55%;
-    padding:80px 0px 140px 0px
+    padding:80px 20px 100px 20px;
 }
 #make-appoinment a:hover{
     text-decoration: none;
@@ -119,23 +118,18 @@
     font-weight: 600;
     color: #f1f1f1;
     background-color: #e12454;
-    padding: 10px 40px 10px 20px;
+    padding: 10px 30px 10px 20px;
     border-radius: 50px;
 }
 #make-appoinment a:hover{
     background-color: #223a66;
 }
-#box-appoinment{
-    display: flex;
-}
 .row-appoinment{
-    flex-direction: row;
     box-shadow:0px 0px 3px 3px rgb(230, 229, 229);
-    width: 30%;
-    height: 400px;
     padding: 40px;
-    margin: 10px;
+    margin: 20px 30px;
     border-radius: 20px;
+    background-color: #fff;
 }
 #create-appoinment{
     color: #223a66;
@@ -144,11 +138,14 @@
 .icon-box{
     font-size: 40px;
 }
+.box-row{
+    padding: 20px;
+}
 .box-row a{
     font-weight: 500;
     color: #f1f1f1;
     background-color: #223a66;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 10px;
     border-radius: 50px;
 }
 .box-row a:hover{
@@ -162,23 +159,16 @@
     border-bottom: 1px solid #666;
     padding :10px;
 }
-.row-appoinment{
-    background-color: #fff;
-}
 #service{
-    display: flex;
-    padding-top: 350px;
+    padding: 30px 0px;
 }
-.box-service{
-    flex-direction: row;
-    width: 30%;
-}
+
 #service img{
-    padding: 10px;
-    border-radius: 33px;
+    padding: 5px;
+    border-radius: 30px;
 }
 #register-service{
-    padding:100px 0px 0px 50px;
+    padding:50px 20px;
 }
 #register-service a{
     font-weight: 600;
@@ -192,29 +182,25 @@
     text-decoration: none;
     color: #fff;
 }
+
 #result{
-    display: flex;
     background-color: #223a66;
-    position: absolute;
-    margin-top: 50px;
-    width: 75%;
-    text-align: center;
+    margin: 10px;
 }
 .box-result{
-    flex-direction: row;
     width: 25%;
     color: #f1f1f1;
     padding:50px;
-
+    text-align: center;
 }
 .box-result h2{
     font-weight: 900;
-    line-height: inherit;
 }
 .box-result i{
     font-size: 30px;
     color: #254580;
 }
+
 #patient{
     background-color: #f4f9fc;
     color: #223a66;
@@ -225,35 +211,12 @@
     color: red;
     padding: 10px;
 }
+
 #font-appoinment{
-    width: 50%;
-    padding:70px 50px ;
-    color: #223a66;
-    font-weight: 700;
+    padding:30px;
 }
 #book-appoinment{
-    display: flex;
     padding: 100px 0px;
-}
-.column{
-    flex-direction: row;
-    width: 50%;
-    position: relative;
-}
-#font-appoinment td div{
-    padding: 10px;
-    border:1px solid #666;
-    border-radius: 10px;
-    margin:0px 10px 10px 11px;
-
-}
-#font-appoinment div input{
-    border: none;
-    outline: none;
-}
-#font-appoinment div select{
-    border: none;
-    outline:none ;
 }
 #font-appoinment a{
     font-weight: 600;
@@ -261,7 +224,6 @@
     background-color: #223a66;
     padding: 10px 40px 10px 20px;
     border-radius: 50px;
-
 }
 #font-appoinment a:hover{
     background-color: #e12454;
@@ -271,17 +233,17 @@
 #botton-appoinment{
     margin-top: 30px;
 }
+
 #contact-number{
     background-color: #223a66;
     color: #f1f1f1;
-    width: 400px;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     float: right;
     bottom: 50px;
     position: absolute;
-    margin: 0px 0px 30px 80px;
 }
+
 footer{
     background: #f4f9fc;
     padding: 40px 0px;
@@ -305,7 +267,7 @@ footer li a{
 }
 #contact-social li{
     display: inline-table;
-} */
+}
 
 
 
