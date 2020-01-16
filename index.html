@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Novena</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -23,10 +24,11 @@
                     <div class="col-lg-6">
                         <ul class="top-bar-info list-inline-item pl-0 mb-0">
                             <li class="list-inline-item">
-                                <a href="support@novena.com">support@novena.com</a>
+                                <i class="far fa-comment-dots mr-2"></i><a
+                                    href="support@novena.com">support@novena.com</a>
                             </li>
                             <li class="list-inline-item">
-                                Address Ta-134/A, New York, USA
+                                <i class="fas fa-map-marker-alt mr-2"></i>Address Ta-134/A, New York, USA
                             </li>
                         </ul>
                     </div>
@@ -41,99 +43,98 @@
                 </div>
             </div>
         </div>
-        <div id="head">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
             <div class="container">
-                <div class="row">
-                <div id="logo" class="col-4 col-lg-4 col-md-4">
-                    <img src="http://demo.themefisher.com/novena/images/logo.png" alt="Novena" width="200px"
-                        height="80px">
-                </div>
-                <div id="main-menu" class="col-12 col-lg-8 col-md-12">
-                    <ul class="mb-0 mt-16px">
-                        <li class="item-menu"><a href="#">Home</a></li>
-                        <li class="item-menu"><a href="#">Abouts</a></li>
-                        <li class="item-menu"><a href="#">Service</a></li>
-                        <li class="item-menu "><a href="#">Department<i class="fa fa-caret-down"
-                                    style="padding-left:6px;"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="#">Departments</a></li>
-                                <li><a href="#">Department Single</a></li>
+                <a class="navbar-branch" href="#">
+                    <img src="http://demo.themefisher.com/novena/images/logo.png" alt="Novena">
+                </a>
+                <button class="navbar-toggler  collapsed" type="button" data-toggle="collapse"
+                    data-target="#Responsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="Responsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Abouts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+                                data-toggle="dropdown">Department</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Departments</a></li>
+                                <li><a class="dropdown-item" href="#">Department Single</a></li>
                             </ul>
                         </li>
-                        <li class="item-menu"><a href="#">Doctor<i class="fa fa-caret-down"
-                                    style="padding-left:6px;"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="#">Doctors</a></li>
-                                <li><a href="#">Doctor Single</a></li>
-                                <li><a href="#">Appoinment</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+                                data-toggle="dropdown">Doctor</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Doctors</a></li>
+                                <li><a class="dropdown-item" href="#">Doctor Single</a></li>
+                                <li><a class="dropdown-item" href="#">Appoinment</a></li>
                             </ul>
                         </li>
-                        <li class="item-menu"><a href="#">Blog<i class="fa fa-caret-down"
-                                    style="padding-left:6px;"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="#">Blog with sidebar</a></li>
-                                <li><a href="#">Blog Single</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+                                data-toggle="dropdown">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog with sidebar</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Single</a></li>
                             </ul>
                         </li>
-                        <li class="item-menu"><a href="#">Contact</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
-            </div>
-        </div>
+        </nav>
     </header>
     <div id="content">
         <div id="appoinment">
             <div class="container">
                 <div id="make-appoinment" class="row">
-                    <div class="col-12 col-lg-7 col-md-10">
-                    <div style="width: 50px;height: 5px;background-color: red;margin-bottom: 30px;">
-                    </div>
-                    <p>TOTAL HEALTH CARE SOLUTION</p>
-                    <h1">Your Most Trusted Health Partner</h1>
-                    <p style="color: #666;">A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam
-                        aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
-                    <div style="padding-top: 50px;"><a href="#font-appoinment">MAKE APPOINMENT | <i
-                                class="fa fa-angle-right"></i></a>
-                    </div>
+                    <div class="col-12 col-lg-6 col-md-10">
+                        <div style="width: 50px;height: 5px;background-color: red;margin:0px 0px 16px;">
+                        </div>
+                        <span>TOTAL HEALTH CARE SOLUTION</span>
+                        <h1>Your Most Trusted Health Partner</h1>
+                        <p style="color:#6F8BA4;" class="mb-4 pr-5">A repudiandae ipsam labore ipsa voluptatum quidem
+                            quae laudantium quisquam
+                            aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
+                        <div><a href="#font-appoinment">MAKE APPOINMENT | <i class="fa fa-angle-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="create-appoinment">
-                <div class="container">
-                    <div id="box-appoinment" class="row">
-                        <div class="row-appoinment col-10 col-lg-3 col-sm-12 col-md-11">
-                            <div class="box-row">
+        </div>
+        <div id="create-appoinment">
+            <div class="container">
+                <div id="box-appoinment" class="row">
+                    <div class="col-lg-12">
+                        <div class="d-lg-flex">
+                            <div class="row-appoinment mb-5">
                                 <div class="icon-box"><i class="fa fa-user-nurse"></i></div>
-                                <p>24 Hours Service</p>
-                                <h2>Online Appoinment</h2>
+                                <span>24 Hours Service</span>
+                                <h4><b>Online Appoinment</b></h4>
                                 <p>Get ALl time support for emergency.We have introduced the principle of family
                                     medicine.
                                 </p>
                                 <a href="#">MAKE A APPOINMENT</a>
                             </div>
-                        </div>
-                        <div class="row-appoinment col-10 col-lg-3 col-sm-12 col-md-11">
-                            <div class="box-row">
+                            <div class="row-appoinment mb-5">
                                 <div class="icon-box"><i class="fa fa-clock"></i></div>
-                                <p>Timing schedule</p>
-                                <h2>Working Hours</h2>
-                                <ul>
-                                    <li>Sun - Wed :
-                                        8:00 - 17:00</li>
-                                    <li>Thu - Fri :
-                                        9:00 - 17:00</li>
-                                    <li>Sat - sun :
-                                        10:00 - 17:00</li>
+                                <span>Timing schedule</span>
+                                <h4><b>Working Hours</b></h4>
+                                <ul class="w-hours list-unstyled">
+                                    <li class="d-flex justify-content-between">Sun - Wed : <span>8:00 - 17:00</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">Thu - Fri : <span>9:00 - 17:00</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">Sat - sun : <span>10:00 - 17:00</span>
+                                    </li>
                                 </ul>
                                 </p>
                             </div>
-                        </div>
-                        <div class="row-appoinment col-10 col-lg-3 col-sm-12 col-md-11">
-                            <div class="box-row">
+                            <div class="row-appoinment mb-5">
                                 <div class="icon-box"><i class="fa fa-phone-square"></i></div>
-                                <p>Emegency Cases</p>
-                                <h2>1-800-700-6200</h2>
+                                <span>Emegency Cases</span>
+                                <h4><b>1-800-700-6200</b></h4>
                                 <p>Get ALl time support for emergency.We have introduced the principle of family
                                     medicine.Get Conneted with us for any urgency .
                                 </p>
@@ -143,8 +144,8 @@
                 </div>
             </div>
         </div>
-        <div class="container" style="padding-bottom: 150px;">
-            <div id="service" class="row" >
+        <div class="container" style="padding-bottom: 100px;">
+            <div id="service" class="row">
                 <div class="box-service col-6 col-lg-4 col-md-6">
                     <img src="http://demo.themefisher.com/novena/images/about/img-1.jpg" alt="a" class="img-fluid">
                     <div>
@@ -188,46 +189,47 @@
         </div>
         <div id="patient">
             <div class="container">
-                <div style="text-align: center;padding:120px 0px;text-align: center;">
-                    <h1 style="font-weight: 700;">Award winning patient care</h1>
+                <div id="title-patient">
+                    <h1>Award winning patient care</h1>
                     <div style="width: 50px; height: 5px; background-color: red;margin:40px 0px 40px 50%;"></div>
-                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                    <p class="pb-30px">Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates
+                        incidunt
                         molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
                 </div>
-                <div class="card-columns">
-                    <div class="card">
-                        <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-6">
+                        <div class="service-item">
                             <h5><i class="fa fa-flask"></i><b>Laboratory services</b></h5>
                             <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="col-lg-4 col-md-6 col-6">
+                        <div class="service-item">
                             <h5><i class="fas fa-crutch"></i><b>Body Surgery</b></h5>
                             <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body ">
+                    <div class="col-lg-4 col-md-6 col-6">
+                        <div class="service-item">
                             <h5><i class="fa fa-heartbeat"></i><b>Heart Disease</b></h5>
                             <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="col-lg-4 col-md-6 col-6">
+                        <div class="service-item">
                             <h5><i class="fa fa-brain"></i><b>Neurology Sargery</b></h2>
                                 <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="col-lg-4 col-md-6 col-6">
 
-                        <div class="card-body">
+                        <div class="service-item">
                             <h5><i class="fas fa-tooth"></i><b>Dental Care</b></h3>
                                 <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="col-lg-4 col-md-6 col-6">
+                        <div class="service-item">
                             <h5><i class="fas fa-dna"></i><b>Gynecology</b></h5>
                             <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
                         </div>
@@ -237,131 +239,369 @@
         </div>
         <div class="container" id="book-appoinment">
             <div class="row">
-            <div class="column col-lg-6">
-                <img src="http://demo.themefisher.com/novena/images/about/img-3.jpg" alt="d" class="img-fluid">
-                <div id="contact-number"><h1><i class="fas fa-phone"></i>+23 345 67980</h1></div>
+                <div class="column col-lg-6">
+                    <img src="http://demo.themefisher.com/novena/images/about/img-3.jpg" alt="d" class="img-fluid">
+                    <div id="contact-number">
+                        <h1><i class="fas fa-phone"></i>+23 345 67980</h1>
+                    </div>
+                </div>
+                <div id="font-appoinment" class="column col-lg-6">
+                    <h2><b>Book appoinment</b></h2>
+                    <p>Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste
+                        dolorum atque similique praesentium soluta.</p>
+                    <form class="appoinment-form" method="post" action="#">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <select class="form-control" 1">
+                                        <option>Choose Department</option>
+                                        <option>Software Design</option>
+                                        <option>Development cycle</option>
+                                        <option>Software Development</option>
+                                        <option>Maintenance</option>
+                                        <option>Process Query</option>
+                                        <option>Cost and Duration</option>
+                                        <option>Modal Delivery</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Select Doctors</option>
+                                        <option>Software Design</option>
+                                        <option>Development cycle</option>
+                                        <option>Software Development</option>
+                                        <option>Maintenance</option>
+                                        <option>Process Query</option>
+                                        <option>Cost and Duration</option>
+                                        <option>Modal Delivery</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input name="date" id="date" type="date" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input name="time" id="time" type="text" class="form-control" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input name="name" id="name" type="text" class="form-control"
+                                        placeholder="Full Name">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input name="phone" id="phone" type="Number" class="form-control"
+                                        placeholder="Phone Number">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="Your-massage"><textarea name="message" id="message" class="form-control col-lg-12"
+                                    placeholder="Your Message"></textarea></div>
+                            <div id="botton-appoinment"><a href="#">MAKE APPOINMENT</a></div>
+                        </div>
+                    </form>
+                </div>
+
             </div>
-            <div id="font-appoinment" class="column col-lg-6">
-					<h2><b>Book appoinment</b></h2>
-					<p>Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
-					     <form class="appoinment-form" method="post" action="#">
-                    <div class="row">
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <select class="form-control" 1">
-                                  <option>Choose Department</option>
-                                  <option>Software Design</option>
-                                  <option>Development cycle</option>
-                                  <option>Software Development</option>
-                                  <option>Maintenance</option>
-                                  <option>Process Query</option>
-                                  <option>Cost and Duration</option>
-                                  <option>Modal Delivery</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <select class="form-control">
-                                  <option>Select Doctors</option>
-                                  <option>Software Design</option>
-                                  <option>Development cycle</option>
-                                  <option>Software Development</option>
-                                  <option>Maintenance</option>
-                                  <option>Process Query</option>
-                                  <option>Cost and Duration</option>
-                                  <option>Modal Delivery</option>
-                                </select>
-                            </div>
-                        </div>
 
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="date" id="date" type="date" class="form-control">
+        </div>
+        <div id="slides-infoDoctor">
+            <div class="container">
+                <div id="title-infoDoctor">
+                    <h2>We served over 5000+ Patients</h2>
+                    <div style="width: 50px; height: 5px; background-color: red;margin:40px 0px 40px 50%;"></div>
+                    <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
+                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                </div>
+                <div id="slides" class="carousel slide" data-ride="carousel">
+                   <ul class="carousel-indicators">
+                        <li data-target="#slides" data-slide-to="0"></li>
+                        <li data-target="#slides" data-slide-to="1"></li>
+                        <li data-target="#slides" data-slide-to="2"></li>
+                        <li data-target="#slides" data-slide-to="3"></li>
+                        <li data-target="#slides" data-slide-to="4"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="doctor">
+                                        <img src="img/test-thumb1.jpg" alt="">
+                                        <h4>Nice Environment!</h4>
+                                        <span>Partho Sarothi</span>
+                                        <p class="mt-4">They provide great service facilty consectetur adipisicing
+                                            elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos
+                                            adipisci suscipit fugit placeat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="doctor">
+                                        <img src="img/test-thumb2.jpg" alt="">
+                                        <h4>Nice Environment!</h4>
+                                        <span>Partho Sarothi</span>
+                                        <p class="mt-4">They provide great service facilty consectetur adipisicing
+                                            elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos
+                                            adipisci suscipit fugit placeat.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="time" id="time" type="text" class="form-control" placeholder="Time">
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 pr-0">
+                                    <div class="doctor">
+                                        <img src="img/test-thumb3.jpg" alt="">
+                                        <h4>Nice Environment!</h4>
+                                        <span>Partho Sarothi</span>
+                                        <p class="mt-4">They provide great service facilty consectetur adipisicing
+                                            elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos
+                                            adipisci suscipit fugit placeat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 pr-0">
+                                    <div class="doctor">
+                                        <img src="img/test-thumb4.jpg" alt="">
+                                        <h4>Nice Environment!</h4>
+                                        <span>Partho Sarothi</span>
+                                        <p class="mt-4">They provide great service facilty consectetur adipisicing
+                                            elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos
+                                            adipisci suscipit fugit placeat.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="name" id="name" type="text" class="form-control" placeholder="Full Name">
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 pr-0">
+                                    <div class="doctor">
+                                        <img src="img/test-thumb1.jpg" alt="">
+                                        <h4>Nice Environment!</h4>
+                                        <span>Partho Sarothi</span>
+                                        <p class="mt-4">They provide great service facilty consectetur adipisicing
+                                            elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos
+                                            adipisci suscipit fugit placeat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 pr-0">
+                                    <div class="doctor">
+                                        <img src="img/test-thumb2.jpg" alt="">
+                                        <h4>Nice Environment!</h4>
+                                        <span>Partho Sarothi</span>
+                                        <p class="mt-4">They provide great service facilty consectetur adipisicing
+                                            elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos
+                                            adipisci suscipit fugit placeat.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="phone" id="phone" type="Number" class="form-control" placeholder="Phone Number">
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 pr-0">
+                                    <div class="doctor">
+                                        <img src="img/test-thumb3.jpg" alt="">
+                                        <h4>Nice Environment!</h4>
+                                        <span>Partho Sarothi</span>
+                                        <p class="mt-4">They provide great service facilty consectetur adipisicing
+                                            elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos
+                                            adipisci suscipit fugit placeat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 pr-0">
+                                    <div class="doctor">
+                                        <img src="img/test-thumb4.jpg" alt="">
+                                        <h4>Nice Environment!</h4>
+                                        <span>Partho Sarothi</span>
+                                        <p class="mt-4">They provide great service facilty consectetur adipisicing
+                                            elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos
+                                            adipisci suscipit fugit placeat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 pr-0">
+                                    <div class="doctor">
+                                        <img src="img/test-thumb1.jpg" alt="">
+                                        <h4>Nice Environment!</h4>
+                                        <span>Partho Sarothi</span>
+                                        <p class="mt-4">They provide great service facilty consectetur adipisicing
+                                            elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos
+                                            adipisci suscipit fugit placeat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 pr-0">
+                                    <div class="doctor">
+                                        <img src="img/test-thumb2.jpg" alt="">
+                                        <h4>Nice Environment!</h4>
+                                        <span>Partho Sarothi</span>
+                                        <p class="mt-4">They provide great service facilty consectetur adipisicing
+                                            elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos
+                                            adipisci suscipit fugit placeat.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                        <span class="carousel-control-prev-icon dark"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#slides" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                </div>
+            </div>
+            <div id="partner-support">
+                <div class="container">
+                    <div id="title-infoDoctor">
+                        <h2>Partners who support us</h2>
+                        <div style="width: 50px; height: 5px; background-color: red;margin:40px 0px 40px 50%;"></div>
+                        <p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                    </div>
+                    <div id="slide-partner" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#slide-partner" data-slide-to="0"></li>
+                            <li data-target="#slide-partner" data-slide-to="1"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> 
+                                <div class="row">
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/3.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/4.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/5.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/6.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item"> 
+                                <div class="row">
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/1.png" alt="" style="width=203px;" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/2.png" alt="" style="width=203px;" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/3.png" alt=""  style="width=203px;" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/4.png" alt=""  style="width=203px;" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/5.png" alt=""  style="width=203px;" class="img-fluid">
+                                    </div>
+                                    <div class="col-4 col-lg-2">
+                                        <img src="./img/6.png" alt=""  style="width=203px;" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
                     <div>
-                        <div id="Your-massage"><textarea name="message" id="message" class="form-control col-lg-12"
-                                placeholder="Your Message"></textarea></div>
-                        <div id="botton-appoinment"><a href="#">MAKE APPOINMENT</a></div>
+                        <img src="http://demo.themefisher.com/novena/images/logo.png" alt="logo">
+                    </div>
+                    <p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur
+                        veritatis eveniet distinctio possimus.</p>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <ul id="contact-social">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                </form>
-            </div>
-
-        </div>
-    </div>
-    <footer><div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div>
-                    <img src="http://demo.themefisher.com/novena/images/logo.png" alt="logo">
+                <div class="col-lg-2 col-md-6">
+                    <h3><b>Department</b></h3>
+                    <ul>
+                        <li><a href="#">Surgery</a></li>
+                        <li><a href="#">Wome's Health</a></li>
+                        <li><a href="#">Radiologyy</a></li>
+                        <li><a href="#">Cardioc</a></li>
+                        <li><a href="#">Medicine</a></li>
+                    </ul>
                 </div>
-                <p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <ul id="contact-social">
-                    <li>
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
+                <div class="col-lg-2 col-md-6">
+                    <h3><b>Support</b></h3>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Company Support</a></li>
+                        <li><a href="#">FAQuestions</a></li>
+                        <li><a href="#">Company Licence</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3><b>Get In Touch</b></h3>
+                    <ul>
+                        <li>
+                            <p><i class="fas fa-envelope-square pr-2"></i>Support Available for 24/7</p>
+                        </li>
+                        <li><a href="#">Privacy Policy</a><b>Support@email.com</b></li>
+                        <li>Mon to Fri : 08:30 - 18:00</li>
+                        <li><a href="#"><b><i class="fas fa-phone pr-1"></i>+23-456-6588</b></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-2">
-                <h3><b>Department</b></h3>
-                <ul>
-                    <li><a href="#">Surgery</a></li>
-                    <li><a href="#">Wome's Health</a></li>
-                    <li><a href="#">Radiologyy</a></li>
-                    <li><a href="#">Cardioc</a></li>
-                    <li><a href="#">Medicine</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2">
-                <h3><b>Support</b></h3>
-                <ul>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Company Support</a></li>
-                    <li><a href="#">FAQuestions</a></li>
-                    <li><a href="#">Company Licence</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4">
-                <h3><b>Get In Touch</b></h3>
-                <ul>
-                    <li><p><i class="fas fa-envelope-square"></i>Support Available for 24/7</p></li>
-                    <li><a href="#">Privacy Policy</a><b>Support@email.com</b></li>
-                    <li>Mon to Fri : 08:30 - 18:00</li>
-                    <li><a href="#"><b><i class="fas fa-phone"></i>+23-456-6588</b></a></li>
-                </ul>
+            <div class="row" id="footer-email">
+                <div class="col-lg-6 col-md-10 col-10">
+                   <p><i class="far fa-copyright pr-1"></i>Copyright Reserved to Novena by <a href="#">Themefisher</a></p>
+                </div>
+                <div class="col-8 col-md-12 col-lg-6">
+                    <div id="form-email" class="row">
+                        <input type="email" placeholder="Your Email address" class="col-9 col-lg-9"><button class="col-3 col-lg-3">Subcribe</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </footer>
 </body>
-</html> 
 
+</html>

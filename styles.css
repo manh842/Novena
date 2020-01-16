@@ -1,21 +1,23 @@
+
 *{
     margin: 0;
-    box-sizing: border-box;
     padding:0;
-    font-family: "Roboto", sans-serif;
     line-height: 1.6;
+    box-sizing: border-box;
 }
 .header-top-bar{
     background-color: #223a66;
     padding:10px;
     color: #fff;
 }
+
 .top-bar-info li a{
     color: #fff;
 }
 .top-right-bar a span{
     color: #fff;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 .top-bar-info li a:hover{
     text-decoration:none;
@@ -23,141 +25,117 @@
 .top-right-bar a:hover{
     text-decoration:none;
 }
-/* [class*="col-"] {
-    float: left;
-    padding: 15px;
-    width: 100%;
-  }
-  @media only screen and (min-width: 768px) {
-
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    /*
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }*/
-
-#main-menu{
-    float: right;
-    padding: 0;
-    margin: 0;
+#navbar{
+    background-color: #fff !important;
 }
-.item-menu{
-    display: inline-table;
-    position: relative;
 
-}
-.sub-menu{
-    list-style-type: none;
-    padding-left:0;
-    display: none;
-    position: absolute;
-    border-top:3px solid red ;
-}
-.sub-menu li a{
-    width: 200px;
-    height: auto;
-    background: #f1f1f1;
-    border-top:1px solid #666;
-
-}
-#main-menu ul li a{
+#Responsive .nav-link{
+    font-weight: 600;
     padding: 10px 15px;
-    display: block;
-    color:black;
+    color: #222;
+    font-family: "Exo", sans-serif;
 }
-#main-menu ul li a:hover{
-    text-decoration: none;
-}
-.item-menu:hover .sub-menu{
-    display: block;
-}
+
 @media only screen and (min-width: 953px){
-    #appoinment{
-        background-image: url(./slider-bg-1.jpg);
+    #content{
+        background-image: url(./img/slider-bg-1.jpg);
         width:100%;
         background-size: cover;
+        height:700px;
     }
 }
-@media only screen and (max-width: 953px){
-    #appoinment{
+@media only screen and (max-width: 900px){
+    #content{
         background-color: #fff;
     }
 }
 
 #make-appoinment{
-    padding:80px 20px 100px 20px;
+    padding:80px 0px 160px;
+}
+#make-appoinment span{
+    letter-spacing: 2px;
+    font-size: 14px;
+    color:#6F8BA4;
+}
+#make-appoinment h1{
+    margin: 16px 0px;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: -1.2px;
+    text-transform: capitalize;
+    color: #223a66;
 }
 #make-appoinment a:hover{
     text-decoration: none;
 }
 #make-appoinment a{
-    font-weight: 600;
     color: #f1f1f1;
     background-color: #e12454;
-    padding: 10px 30px 10px 20px;
-    border-radius: 50px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    padding: .75rem 2rem;
+    font-family: "Exo", sans-serif;
+    border-radius: 30px;
+    transition: 0.5s;
 }
 #make-appoinment a:hover{
     background-color: #223a66;
 }
 .row-appoinment{
-    box-shadow:0px 0px 3px 3px rgb(230, 229, 229);
-    padding: 40px;
-    margin: 20px 30px;
-    border-radius: 20px;
+    flex-basis: 33.33%;
+    margin: 0px 10px;
+    padding: 30px 30px;
     background-color: #fff;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
 }
 #create-appoinment{
     color: #223a66;
 
 }
 .icon-box{
-    font-size: 40px;
+    font-size: 50px;
+    margin: 0px 0px 24px;
 }
-.box-row{
-    padding: 20px;
-}
-.box-row a{
+.row-appoinment a{
     font-weight: 500;
     color: #f1f1f1;
     background-color: #223a66;
     padding: 10px 10px;
     border-radius: 50px;
+    transition: 0.5s;
+    /* box-sizing: border-box; */
 }
-.box-row a:hover{
+.row-appoinment a:hover{
     background-color: #e12454;
     text-decoration: none;
     color: #fff;
 }
-.box-row ul li{
+.row-appoinment ul li{
     text-decoration: none;
     list-style-type: none;
-    border-bottom: 1px solid #666;
-    padding :10px;
+    border-bottom: 1px solid rgb(238, 232, 232);
+    padding :3px;
+} 
+.row-appoinment h4 b{
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #223a66;
+    margin-bottom: 16px;
+    line-height: 2rem;
+}
+.row-appoinment p{
+    font-size: 14px;
+    color: #6F8BA4;
+    margin-bottom: 24px;
+    line-height: 30px;
+}
+.row-appoinment span{
+    color: #6F8BA4;
 }
 #service{
     padding: 30px 0px;
@@ -176,6 +154,7 @@
     background-color: #e12454;
     padding: 12px 50px 12px 20px;
     border-radius: 50px;
+    transition: 0.5s;
 }
 #register-service a:hover{
     background-color: #223a66;
@@ -194,7 +173,9 @@
     text-align: center;
 }
 .box-result h2{
-    font-weight: 900;
+    font-weight: 700;
+    font-size: 70px;
+    font-family: "Exo", sans-serif;
 }
 .box-result i{
     font-size: 30px;
@@ -204,9 +185,27 @@
 #patient{
     background-color: #f4f9fc;
     color: #223a66;
-    padding:50px 0px 50px 0px;
+    padding:40px 0px 100px;
 }
-.card-body i{
+#patient p{
+    color: #6F8BA4;
+}
+#title-patient h1{
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 44px;
+}
+#title-patient{
+    padding: 40px 0px;
+}
+.service-item{
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.service-item i{
     font-size: 35px;
     color: red;
     padding: 10px;
@@ -214,6 +213,16 @@
 
 #font-appoinment{
     padding:30px;
+}
+#font-appoinment h2 b{
+    color: #223a66;
+    font-size: 44px;
+    margin-bottom: 8px;
+    font-family: "Exo", sans-serif;
+}
+#font-appoinment p{
+    color: #6F8BA4;
+    margin-bottom: 24px;
 }
 #book-appoinment{
     padding: 100px 0px;
@@ -224,6 +233,7 @@
     background-color: #223a66;
     padding: 10px 40px 10px 20px;
     border-radius: 50px;
+    transition: 0.5s;
 }
 #font-appoinment a:hover{
     background-color: #e12454;
@@ -243,23 +253,59 @@
     bottom: 50px;
     position: absolute;
 }
-
+#slides-infoDoctor{
+    background: #f4f9fc;
+    padding: 100px 0px;
+}
+.doctor{
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.doctor img{
+    width:80px ;
+    height: 80px;
+    border-radius: 100%;
+    border:5px solid #f1f1f1;
+    float: left;
+    margin:0px 15px 0px 0px;
+}
+.carousel-inner{
+    padding:50px;
+}
+#title-infoDoctor{
+    text-align: center;
+}
+#title-infoDoctor h2{
+        color: #223a66;
+        font-size: 44px;
+        margin-bottom: 8px;
+        font-family: "Exo", sans-serif;
+        font-weight: 700;
+}
+#partner-support{
+    padding: 80px 0px;
+    background-color: #fff;
+}
 footer{
     background: #f4f9fc;
     padding: 40px 0px;
     color: #223a66;
-
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
 }
 footer li{
     list-style-type: none;
+    line-height: 35px;
 }
 footer li a:hover{
     text-decoration: none;
-    color: rgb(158, 157, 157);
+    color: rgb(163, 33, 33);
     width: 100%;
 }
 footer li a{
     color: #666;
+    transition: 0.5s;
 }
 #contact-social li{
     font-size: 40px;
@@ -267,6 +313,35 @@ footer li a{
 }
 #contact-social li{
     display: inline-table;
+}
+#footer-email{
+    border-top: 1px solid rgb(212, 212, 212);   
+    padding: 30px 0px;
+}
+#footer-email input{
+    width: 80%;
+}
+#form-email{
+    padding: 6px 12px 6px 25px;
+    border: 1px solid #223a66;
+    border-radius: 50px;
+    background-color: #fff;
+}
+#form-email input{
+   border: none;
+}
+#form-email button{
+    padding: 10px 40px 10px 40px ;
+    border-radius: 50px;
+    border: none;
+    background: #e12454;
+    color: #fff;
+    border-color: #e12454;
+    transition: 0.5s;
+    font-weight: 700;
+}
+#form-email button:hover{
+    background: #223a66;
 }
 
 
