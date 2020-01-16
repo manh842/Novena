@@ -321,6 +321,7 @@ footer li a{
 #footer-email input{
     width: 60%;
     float: left;
+    outline: none;
 }
 #form-email{
     padding: 6px 12px 6px 25px;
