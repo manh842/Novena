@@ -319,7 +319,8 @@ footer li a{
     padding: 30px 0px;
 }
 #footer-email input{
-    width: 80%;
+    width: 60%;
+    float: left;
 }
 #form-email{
     padding: 6px 12px 6px 25px;
@@ -342,6 +343,16 @@ footer li a{
 }
 #form-email button:hover{
     background: #223a66;
+    outline: none;
+    float:right;
+}
+
+
+@media only screen and (max-width: 450px){
+    #footer-email input{
+        width: 57%;
+        float: left;
+    }
 }
 
 
